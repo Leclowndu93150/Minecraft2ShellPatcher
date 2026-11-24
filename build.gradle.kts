@@ -14,6 +14,16 @@ prism {
         author("Leclowndu93150")
     }
 
+    publishing {
+        changelogFile = "CHANGELOG.md"
+        type = STABLE
+
+        curseforge {
+            accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+            projectId = "1828783"
+        }
+    }
+
     version("26.3") {
         fabric {
             loaderVersion = "0.19.5"
